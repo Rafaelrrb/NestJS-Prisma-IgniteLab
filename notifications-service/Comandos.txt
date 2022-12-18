@@ -1,0 +1,28 @@
+NestJs (https://docs.nestjs.com/)
+
+Cria o projeto 
+  - nest new project-name
+
+Rodando
+  - npm run start:dev
+
+Prisma 
+  - npm i prisma -D
+  - npm i @prisma/client
+  - Para rodar com SQLite
+    - npx prisma init --datasource-provider SQLite
+  - Criar a tabela no prisma
+    - npx prisma migrate dev
+  - Para ver o banco 
+    - npx prisma studio
+  - conectar o prisma com o service criando "prisma.service.ts" (https://docs.nestjs.com/recipes/prisma)
+  - Validando os campos recebidos 
+    - npm i class-validator class-transformer
+
+Testes 
+  - npm run test
+  Relatorio de cobertura de testes
+    - npm run test:cov
+
+Procura erros no ts
+  - npx tsc --noEmit
